@@ -26,6 +26,31 @@
             bindings = <&kp LG(LC(RIGHT))>;
             key-positions = <20 21>;
         };
+
+        window-bottom-left {
+            bindings = <&kp LC(LA(LG(LEFT)))>;
+            key-positions = <31 32>;
+        };
+
+        window-bottom-right {
+            bindings = <&kp LC(LA(LG(DOWN)))>;
+            key-positions = <32 33>;
+        };
+
+        window-top-left {
+            bindings = <&kp LA(LC(LG(UP_ARROW)))>;
+            key-positions = <7 8>;
+        };
+
+        window-top-right {
+            bindings = <&kp LA(LC(LG(RIGHT)))>;
+            key-positions = <8 9>;
+        };
+
+        window-full-screen {
+            bindings = <&kp LC(LG(DOWN))>;
+            key-positions = <19 21>;
+        };
     };
 
     //
