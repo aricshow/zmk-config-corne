@@ -197,19 +197,19 @@
 
         LOWER {
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans    &trans     &trans    &trans  &trans  &trans
+&kp GRAVE  &trans  &kp HOME  &kp UP    &kp END    &kp PAGE_UP      &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&trans     &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN    &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACE        &kp RIGHT_BRACE
+&trans     &trans  &trans    &trans    &trans     &trans           &kp F9  &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+                             &trans    &trans     &trans           &trans  &trans   &trans
             >;
         };
 
         RAISE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &trans    &kp N0  &trans  &trans
+&trans  &kp EXCL     &kp AT_SIGN  &kp DOLLAR  &kp AMPERSAND  &trans    &trans  &kp N7        &kp N8      &kp N9  &kp KP_PLUS      &kp KP_MINUS
+&trans  &kp PERCENT  &kp CARET    &trans      &trans         &trans    &trans  &kp N4        &kp N5      &kp N6  &kp KP_MULTIPLY  &kp KP_DIVIDE
+&trans  &trans       &trans       &trans      &trans         &trans    &trans  &kp NUMBER_1  &kp N2      &kp N3  &kp BACKSLASH    &kp KP_EQUAL
+                                  &trans      &trans         &trans    &kp N0  &trans        &kp KP_DOT
             >;
         };
     };
