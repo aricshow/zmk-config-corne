@@ -55,7 +55,24 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        Window-Left {
+            bindings = <&kp LG(LC(LEFT))>;
+            key-positions = <19 20>;
+        };
+
+        Window-Middle {
+            bindings = <&kp LG(LC(UP_ARROW))>;
+            key-positions = <19 20 21>;
+        };
+
+        Window-Right {
+            bindings = <&kp LG(LC(RIGHT))>;
+            key-positions = <20 21>;
+        };
+    };
 
     //
 
