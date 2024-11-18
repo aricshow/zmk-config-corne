@@ -67,6 +67,43 @@
         };
     };
 
+    macros {
+        text1: text1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp N1>;
+            label = "TEXT1";
+        };
+
+        text2: text2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp N2>;
+            label = "TEXT2";
+        };
+
+        text3: text3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp NUMBER_3>;
+            label = "TEXT3";
+        };
+
+        text4: text4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp NUMBER_4>;
+            label = "TEXT4";
+        };
+
+        text5: text5 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp N5>;
+            label = "TEXT5";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -94,10 +131,10 @@
 
         RAISE {
             bindings = <
-&kp GRAVE  &kp F1             &kp F2               &kp F3           &kp F4                         &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7                &kp KP_NUMBER_8            &kp KP_NUMBER_9                &kp PLUS               &kp DEL
-&kp CAPS   &hm LEFT_SHIFT F5  &hm LEFT_CONTROL F6  &hm LEFT_ALT F7  &hm LS(LEFT_COMMAND) ASTERISK  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hm RIGHT_COMMAND KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &hm RIGHT_CONTROL KP_NUMBER_6  &hm RIGHT_SHIFT MINUS  &kp INSERT
-&trans     &kp F9             &kp F10              &kp F11          &kp F12                        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_NUMBER_1                &kp KP_NUMBER_2            &kp KP_NUMBER_3                &kp BACKSLASH          &kp KP_EQUAL
-                                                   &trans           &trans                         &trans                  &kp N0                 &trans                         &kp KP_DOT
+&kp GRAVE  &kp F1             &kp F2               &kp F3           &kp F4               &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7                &kp KP_NUMBER_8            &kp KP_NUMBER_9                &kp PLUS               &kp DEL
+&kp CAPS   &hm LEFT_SHIFT F5  &hm LEFT_CONTROL F6  &hm LEFT_ALT F7  &hm LEFT_COMMAND F8  &kp LEFT_BRACE          &kp RIGHT_BRACE        &hm RIGHT_COMMAND KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &hm RIGHT_CONTROL KP_NUMBER_6  &hm RIGHT_SHIFT MINUS  &kp INSERT
+&trans     &kp F9             &kp F10              &kp F11          &kp F12              &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_NUMBER_1                &kp KP_NUMBER_2            &kp KP_NUMBER_3                &kp BACKSLASH          &kp KP_EQUAL
+                                                   &trans           &trans               &trans                  &kp N0                 &trans                         &kp KP_DOT
             >;
 
             label = "Raise";
@@ -105,9 +142,9 @@
 
         Mouse-Macros {
             bindings = <
-&trans  &kp F13  &kp F14  &kp F15  &kp F16  &trans    &trans            &mkp LCLK          &mmv MOVE_UP    &mkp RCLK          &mwh SCROLL_UP     &hm C_POWER C_SLEEP
-&trans  &kp F17  &kp F18  &kp F19  &kp F20  &trans    &trans            &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mwh SCROLL_DOWN   &trans
-&trans  &kp F21  &kp F22  &kp F23  &kp F24  &trans    &mwh SCROLL_LEFT  &kp RIGHT_COMMAND  &kp RIGHT_ALT   &kp RIGHT_CONTROL  &mwh SCROLL_RIGHT  &trans
+&trans  &kp F13  &kp F14  &kp F15  &kp F16  &text3    &text1            &mkp LCLK          &mmv MOVE_UP    &mkp RCLK          &mwh SCROLL_UP     &hm C_POWER C_SLEEP
+&trans  &kp F17  &kp F18  &kp F19  &kp F20  &text4    &text2            &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mwh SCROLL_DOWN   &trans
+&trans  &kp F21  &kp F22  &kp F23  &kp F24  &text5    &mwh SCROLL_LEFT  &kp RIGHT_COMMAND  &kp RIGHT_ALT   &kp RIGHT_CONTROL  &mwh SCROLL_RIGHT  &trans
                           &trans   &trans   &trans    &trans            &trans             &trans
             >;
 
