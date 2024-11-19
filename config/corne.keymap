@@ -173,9 +173,9 @@
 
         Mouse-Macros {
             bindings = <
-&trans  &kp F13  &kp F14  &kp F15  &kp F16  &text3    &text1            &mkp LCLK          &mmv MOVE_UP    &mkp RCLK          &mwh SCROLL_UP     &hm C_POWER C_SLEEP
-&trans  &kp F17  &kp F18  &kp F19  &kp F20  &text4    &text2            &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &mwh SCROLL_DOWN   &trans
-&trans  &kp F21  &kp F22  &kp F23  &kp F24  &text5    &mwh SCROLL_LEFT  &kp RIGHT_COMMAND  &kp RIGHT_ALT   &kp RIGHT_CONTROL  &mwh SCROLL_RIGHT  &trans
+&trans  &kp F13  &kp F14  &kp F15  &kp F16  &text3    &text1            &mkp LCLK          &mmv MOVE_UP    &mkp RCLK          &msc SCROLL_UP     &hm C_POWER C_SLEEP
+&trans  &kp F17  &kp F18  &kp F19  &kp F20  &text4    &text2            &mmv MOVE_LEFT     &mmv MOVE_DOWN  &mmv MOVE_RIGHT    &msc SCROLL_DOWN   &trans
+&trans  &kp F21  &kp F22  &kp F23  &kp F24  &text5    &msc SCROLL_LEFT  &kp RIGHT_COMMAND  &kp RIGHT_ALT   &kp RIGHT_CONTROL  &msc SCROLL_RIGHT  &trans
                           &trans   &trans   &trans    &trans            &trans             &trans
             >;
 
