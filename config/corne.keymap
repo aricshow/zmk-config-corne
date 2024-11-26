@@ -152,8 +152,8 @@
         LOWER {
             bindings = <
 &kp GRAVE   &kp EXCL     &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE         &kp C_VOLUME_UP    &kp HOME        &kp UP_ARROW  &kp END     &kp PAGE_UP         &kp LA(BACKSPACE)
-&caps_word  &kp POUND    &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AMPERSAND    &kp C_VOLUME_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT   &kp PAGE_DOWN       &sk RIGHT_CONTROL
-&trans      &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp ASTERISK     &kp C_RW           &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT  &kp C_FAST_FORWARD  &trans
+&caps_word  &kp POUND    &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK        &kp C_VOLUME_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT   &kp PAGE_DOWN       &sk RIGHT_CONTROL
+&trans      &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND    &kp C_RW           &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT  &kp C_FAST_FORWARD  &trans
                                      &trans                &trans                 &trans           &trans             &trans          &trans
             >;
 
@@ -162,10 +162,10 @@
 
         RAISE {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS       &kp DEL
-&kp CAPS   &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS      &kp INSERT
-&trans     &kp F9  &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH  &kp KP_EQUAL
-                            &trans   &trans   &trans                  &kp N0                 &trans           &kp KP_DOT
+&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4   &trans    &kp KP_EQUAL  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp UNDERSCORE  &kp DEL
+&kp CAPS   &kp F5  &kp F6   &kp F7   &kp F8   &trans    &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS    &kp INSERT
+&kp GLOBE  &kp F9  &kp F10  &kp F11  &kp F12  &trans    &kp ASTERISK  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH   &kp RIGHT_CONTROL
+                            &trans   &trans   &trans    &kp N0        &trans           &kp KP_DOT
             >;
 
             label = "Raise";
