@@ -14,42 +14,42 @@
 
         Window-Left {
             bindings = <&kp LG(LC(LEFT))>;
-            key-positions = <19 20>;
+            key-positions = <14 15>;
         };
 
         Window-Middle {
             bindings = <&kp LG(LC(UP_ARROW))>;
-            key-positions = <19 20 21>;
+            key-positions = <16 14>;
         };
 
         Window-Right {
             bindings = <&kp LG(LC(RIGHT))>;
-            key-positions = <20 21>;
+            key-positions = <15 16>;
         };
 
         window-bottom-left {
             bindings = <&kp LC(LA(LG(LEFT)))>;
-            key-positions = <31 32>;
+            key-positions = <26 27>;
         };
 
         window-bottom-right {
             bindings = <&kp LC(LA(LG(DOWN)))>;
-            key-positions = <32 33>;
+            key-positions = <27 28>;
         };
 
         window-top-left {
             bindings = <&kp LA(LC(LG(UP_ARROW)))>;
-            key-positions = <7 8>;
+            key-positions = <2 3>;
         };
 
         window-top-right {
             bindings = <&kp LA(LC(LG(RIGHT)))>;
-            key-positions = <8 9>;
+            key-positions = <3 4>;
         };
 
         window-full-screen {
             bindings = <&kp LC(LG(DOWN))>;
-            key-positions = <19 21>;
+            key-positions = <14 15 16>;
         };
 
         bt0 {
