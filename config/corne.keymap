@@ -85,19 +85,6 @@
 
     //
 
-    behaviors {
-        hm: hm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Home Mod";
-            #binding-cells = <2>;
-            bindings = <&mt>, <&kp>;
-
-            tapping-term-ms = <350>;
-            flavor = "balanced";
-            hold-trigger-key-positions = <13 14 15 16 19 20 21 22>;
-        };
-    };
-
     macros {
         text1: text1 {
             compatible = "zmk,behavior-macro";
@@ -133,6 +120,13 @@
             bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp N5>;
             label = "TEXT5";
         };
+
+        text6: text_6 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(L) &kp A &kp S &kp T &kp LS(O) &kp N &kp E &kp EXCL>;
+            label = "TEXT_6";
+        };
     };
 
     keymap {
@@ -151,10 +145,10 @@
 
         LOWER {
             bindings = <
-&kp GRAVE   &kp DOUBLE_QUOTES  &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp C_VOLUME_UP    &kp HOME        &kp UP_ARROW  &kp END     &kp PLUS        &trans
-&caps_word  &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD         &kp C_VOLUME_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT   &kp MINUS       &trans
-&trans      &kp PERCENT        &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &kp C_MUTE         &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT  &kp UNDERSCORE  &trans
-                                           &trans                &kp LA(BACKSPACE)      &trans             &trans             &trans          &trans
+&kp GRAVE   &kp HASH       &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp C_VOLUME_UP    &kp HOME        &kp UP_ARROW  &kp END     &kp PAGE_UP    &trans
+&caps_word  &kp AMPERSAND  &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD         &kp C_VOLUME_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT   &kp PAGE_DOWN  &trans
+&trans      &kp PERCENT    &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &kp C_MUTE         &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT  &kp BACKSLASH  &trans
+                                       &trans                &kp LA(BACKSPACE)      &trans             &trans             &kp MINUS       &trans
             >;
 
             label = "Lower";
@@ -162,10 +156,10 @@
 
         RAISE {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4      &kp PIPE         &kp BACKSLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES  &trans
-&trans     &kp F5  &kp F6   &kp F7   &kp F8      &trans           &kp ASTRK      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SINGLE_QUOTE   &trans
-&kp GLOBE  &kp F9  &kp F10  &kp F11  &kp F12     &kp AMPERSAND    &kp HASH       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL       &trans
-                            &trans   &kp DELETE  &trans           &trans         &kp KP_NUMBER_0  &kp KP_DOT
+&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4      &kp PIPE         &kp PLUS    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp DOUBLE_QUOTES  &trans
+&trans     &kp F5  &kp F6   &kp F7   &kp F8      &kp MINUS        &kp ASTRK   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp SINGLE_QUOTE   &trans
+&kp GLOBE  &kp F9  &kp F10  &kp F11  &kp F12     &kp AMPERSAND    &kp KP_DOT  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL       &trans
+                            &trans   &kp DELETE  &trans           &trans      &kp UNDERSCORE   &kp KP_NUMBER_0
             >;
 
             label = "Raise";
