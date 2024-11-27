@@ -173,10 +173,10 @@
 
         MACROS {
             bindings = <
-&trans        &kp F13  &kp F14  &kp F15  &kp F16            &text3    &text1  &trans            &kp LS(LG(UP_ARROW))  &trans             &trans  &trans
-&kp CAPSLOCK  &kp F17  &kp F18  &kp F19  &kp F20            &text4    &text2  &kp LG(LS(LEFT))  &kp LG(LS(DOWN))      &kp LS(LG(RIGHT))  &trans  &trans
-&kp GLOBE     &kp F21  &kp F22  &kp F23  &kp F24            &text5    &trans  &trans            &trans                &trans             &trans  &trans
-                                &trans   &kp LG(BACKSPACE)  &trans    &trans  &trans            &trans
+&trans        &kp F13  &kp F14  &kp F15  &kp F16            &kp LG(LS(N4))        &text1  &trans            &kp LS(LG(UP_ARROW))  &trans             &text4  &trans
+&kp CAPSLOCK  &kp F17  &kp F18  &kp F19  &kp F20            &kp LS(LG(LC(N4)))    &text2  &kp LG(LS(LEFT))  &kp LG(LS(DOWN))      &kp LS(LG(RIGHT))  &text5  &trans
+&kp GLOBE     &kp F21  &kp F22  &kp F23  &kp F24            &kp LS(LG(N3))        &text3  &trans            &trans                &trans             &trans  &trans
+                                &trans   &kp LG(BACKSPACE)  &trans                &trans  &trans            &trans
             >;
 
             label = "Macros";
