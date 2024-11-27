@@ -121,11 +121,11 @@
             label = "TEXT5";
         };
 
-        text6: text_6 {
+        text6: text6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(L) &kp A &kp S &kp T &kp LS(O) &kp N &kp E &kp EXCL>;
-            label = "TEXT_6";
+            label = "TEXT6";
         };
     };
 
@@ -169,7 +169,7 @@
             bindings = <
 &trans        &kp F13  &kp F14  &kp F15  &kp F16            &kp LG(LS(N4))        &text1  &trans            &kp LS(LG(UP_ARROW))  &trans             &text4  &trans
 &kp CAPSLOCK  &kp F17  &kp F18  &kp F19  &kp F20            &kp LS(LG(LC(N4)))    &text2  &kp LG(LS(LEFT))  &kp LG(LS(DOWN))      &kp LS(LG(RIGHT))  &text5  &trans
-&kp GLOBE     &kp F21  &kp F22  &kp F23  &kp F24            &kp LS(LG(N3))        &text3  &trans            &trans                &trans             &trans  &trans
+&kp GLOBE     &kp F21  &kp F22  &kp F23  &kp F24            &kp LS(LG(N3))        &text3  &trans            &trans                &trans             &text6  &trans
                                 &trans   &kp LG(BACKSPACE)  &trans                &trans  &trans            &trans
             >;
 
