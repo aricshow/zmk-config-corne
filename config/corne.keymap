@@ -140,10 +140,10 @@
 
         BASE {
             bindings = <
-&kp ESCAPE      &kp Q  &kp W  &kp E         &kp R  &kp T            &kp Y      &kp U  &kp I      &kp O    &kp P          &kp RIGHT_CONTROL
-&kp TAB         &kp A  &kp S  &kp D         &kp F  &kp G            &kp H      &kp J  &kp K      &kp L    &kp SEMICOLON  &kp RETURN
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C         &kp V  &kp B            &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                              &kp LEFT_GUI  &mo 2  &kp BACKSPACE    &kp SPACE  &mo 1  &kp LALT
+&kp ESCAPE    &kp Q  &kp W  &kp E           &kp R          &kp T    &kp Y  &kp U      &kp I            &kp O    &kp P          &kp RIGHT_CONTROL
+&kp TAB       &kp A  &kp S  &kp D           &kp F          &kp G    &kp H  &kp J      &kp K            &kp L    &kp SEMICOLON  &kp RETURN
+&kp LEFT_GUI  &kp Z  &kp X  &kp C           &kp V          &kp B    &kp N  &kp M      &kp COMMA        &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
+                            &kp LEFT_SHIFT  &kp BACKSPACE  &mo 2    &mo 1  &kp SPACE  &kp RIGHT_SHIFT
             >;
 
             label = "Base";
@@ -151,10 +151,10 @@
 
         LOWER {
             bindings = <
-&kp GRAVE   &kp EXCL     &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PIPE         &kp C_VOLUME_UP    &kp HOME        &kp UP_ARROW  &kp END     &kp PAGE_UP         &trans
-&caps_word  &kp POUND    &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp ASTRK        &kp C_VOLUME_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT   &kp PAGE_DOWN       &sk RIGHT_CONTROL
-&trans      &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AMPERSAND    &kp C_RW           &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT  &kp C_FAST_FORWARD  &trans
-                                     &trans                &trans                 &kp DELETE       &trans             &trans          &trans
+&kp GRAVE   &kp DOUBLE_QUOTES  &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp C_VOLUME_UP    &kp HOME        &kp UP_ARROW  &kp END     &kp PAGE_UP         &trans
+&caps_word  &kp SINGLE_QUOTE   &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PERIOD         &kp C_VOLUME_DOWN  &kp LEFT        &kp DOWN      &kp RIGHT   &kp PAGE_DOWN       &trans
+&trans      &kp PERCENT        &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &kp C_RW           &kp C_PREVIOUS  &kp C_PP      &kp C_NEXT  &kp C_FAST_FORWARD  &trans
+                                           &trans                &trans                 &trans             &trans             &trans          &trans
             >;
 
             label = "Lower";
@@ -162,10 +162,10 @@
 
         RAISE {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4   &kp DOUBLE_QUOTES    &kp KP_EQUAL  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp UNDERSCORE  &trans
-&trans     &kp F5  &kp F6   &kp F7   &kp F8   &kp SINGLE_QUOTE     &kp KP_PLUS   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS    &trans
-&kp GLOBE  &kp F9  &kp F10  &kp F11  &kp F12  &kp GRAVE            &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH   &trans
-                            &trans   &trans   &trans               &kp N0        &trans           &trans
+&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4   &kp PIPE          &kp BACKSLASH  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS   &trans
+&trans     &kp F5  &kp F6   &kp F7   &kp F8   &kp UNDERSCORE    &kp ASTRK      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MINUS  &trans
+&kp GLOBE  &kp F9  &kp F10  &kp F11  &kp F12  &kp AMPERSAND     &kp HASH       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_EQUAL  &trans
+                            &trans   &trans   &trans            &trans         &kp KP_NUMBER_0  &kp KP_DOT
             >;
 
             label = "Raise";
@@ -175,7 +175,7 @@
             bindings = <
 &trans        &kp F13  &kp F14  &kp F15  &kp F16  &text3    &text1  &trans            &kp LS(LG(UP_ARROW))  &trans             &trans  &trans
 &kp CAPSLOCK  &kp F17  &kp F18  &kp F19  &kp F20  &text4    &text2  &kp LG(LS(LEFT))  &kp LG(LS(DOWN))      &kp LS(LG(RIGHT))  &trans  &trans
-&trans        &kp F21  &kp F22  &kp F23  &kp F24  &text5    &trans  &trans            &trans                &trans             &trans  &trans
+&kp GLOBE     &kp F21  &kp F22  &kp F23  &kp F24  &text5    &trans  &trans            &trans                &trans             &trans  &trans
                                 &trans   &trans   &trans    &trans  &trans            &trans
             >;
 
