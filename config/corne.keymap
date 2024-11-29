@@ -90,42 +90,42 @@
         text1: text1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp N1>;
+            bindings = <&kp R &kp E &kp P &kp L &kp A &kp C &kp E &kp T &kp E &kp X &kp T &kp N1>;
             label = "TEXT1";
         };
 
         text2: text2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp N2>;
+            bindings = <&kp R &kp E &kp P &kp L &kp A &kp C &kp E &kp T &kp E &kp X &kp T &kp N2>;
             label = "TEXT2";
         };
 
         text3: text3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp NUMBER_3>;
+            bindings = <&kp R &kp E &kp P &kp L &kp A &kp C &kp E &kp T &kp E &kp X &kp T &kp N3>;
             label = "TEXT3";
         };
 
         text4: text4 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp NUMBER_4>;
+            bindings = <&kp R &kp E &kp P &kp L &kp A &kp C &kp E &kp T &kp E &kp X &kp T &kp N4>;
             label = "TEXT4";
         };
 
         text5: text5 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(I) &kp N &kp S &kp E &kp R &kp T &kp LS(T) &kp E &kp X &kp T &kp N5>;
+            bindings = <&kp R &kp E &kp P &kp L &kp A &kp C &kp E &kp T &kp E &kp X &kp T &kp N5>;
             label = "TEXT5";
         };
 
         text6: text6 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(L) &kp A &kp S &kp T &kp LS(O) &kp N &kp E &kp EXCL>;
+            bindings = <&kp R &kp E &kp P &kp L &kp A &kp C &kp E &kp T &kp E &kp X &kp T &kp N6>;
             label = "TEXT6";
         };
 
@@ -196,9 +196,9 @@
 
         MACROS {
             bindings = <
-&studio_unlock  &kp F13  &kp F14  &kp F15  &kp F16            &kp LG(LS(N4))        &kp LG(X)  &text1      &text2      &text3    &text4       &trans
+&studio_unlock  &kp F13  &kp F14  &kp F15  &kp F16            &kp LG(LS(N4))        &kp LG(X)  &text1      &text2      &text3    &trans       &trans
 &kp CAPSLOCK    &kp F17  &kp F18  &kp F19  &kp F20            &kp LS(LG(LC(N4)))    &kp LG(C)  &tmux_left  &tmux_down  &tmux_up  &tmux_right  &trans
-&kp GLOBE       &kp F21  &kp F22  &kp F23  &kp F24            &kp LS(LG(N3))        &kp LG(V)  &text5      &text6      &trans    &trans       &trans
+&kp GLOBE       &kp F21  &kp F22  &kp F23  &kp F24            &kp LS(LG(N3))        &kp LG(V)  &text4      &text5      &text6    &trans       &trans
                                   &trans   &kp LG(BACKSPACE)  &trans                &trans     &trans      &trans
             >;
 
