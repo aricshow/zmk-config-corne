@@ -156,6 +156,20 @@
             bindings = <&kp LC(B) &kp RIGHT>;
             label = "TMUX_RIGHT";
         };
+
+        tmux_split_vertical: tmux_split_vertical {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp PERCENT>;
+            label = "TMUX_SPLIT_VERTICAL";
+        };
+
+        tmux_split_horizontal: tmux_split_horizontal {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(B) &kp DOUBLE_QUOTES>;
+            label = "TMUX_SPLIT_HORIZONTAL";
+        };
     };
 
     keymap {
@@ -196,9 +210,9 @@
 
         MACROS {
             bindings = <
-&studio_unlock  &kp F13  &kp F14  &kp F15  &kp F16            &kp LG(LS(N4))        &kp LG(X)  &text1      &text2      &text3    &trans       &trans
-&kp CAPSLOCK    &kp F17  &kp F18  &kp F19  &kp F20            &kp LS(LG(LC(N4)))    &kp LG(C)  &tmux_left  &tmux_down  &tmux_up  &tmux_right  &trans
-&kp GLOBE       &kp F21  &kp F22  &kp F23  &kp F24            &kp LS(LG(N3))        &kp LG(V)  &text4      &text5      &text6    &trans       &trans
+&studio_unlock  &kp F13  &kp F14  &kp F15  &kp F16            &kp LG(LS(N4))        &kp LG(X)  &text1      &text2      &text3    &tmux_split_vertical    &trans
+&kp CAPSLOCK    &kp F17  &kp F18  &kp F19  &kp F20            &kp LS(LG(LC(N4)))    &kp LG(C)  &tmux_left  &tmux_down  &tmux_up  &tmux_right             &trans
+&kp GLOBE       &kp F21  &kp F22  &kp F23  &kp F24            &kp LS(LG(N3))        &kp LG(V)  &text4      &text5      &text6    &tmux_split_horizontal  &trans
                                   &trans   &kp LG(BACKSPACE)  &trans                &trans     &trans      &trans
             >;
 
