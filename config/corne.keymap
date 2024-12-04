@@ -169,10 +169,10 @@
 
         MACROS {
             bindings = <
-&studio_unlock  &kp LG(F13)  &kp LA(F13)  &kp LA(LG(F13))  &kp LA(LG(LC(F13)))  &kp LG(LS(N4))        &kp LG(X)  &text1              &text2              &tmux_split_vertical  &tmux_split_horizontal  &trans
-&kp CAPSLOCK    &kp LG(F14)  &kp LA(F14)  &kp LG(LA(F14))  &kp LG(LA(LC(F14)))  &kp LS(LG(LC(N4)))    &kp LG(C)  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)      &kp LS(RIGHT_ARROW)     &trans
-&trans          &kp LG(F15)  &kp LA(F15)  &kp LG(LA(F15))  &kp LA(LC(LG(F15)))  &kp LS(LG(N3))        &kp LG(V)  &tmux_left          &tmux_down          &tmux_up              &tmux_right             &trans
-                                          &trans           &kp LG(BACKSPACE)    &trans                &trans     &trans              &trans
+&studio_unlock  &kp LG(F17)  &kp LA(F17)  &kp LA(LG(F17))  &kp LA(LG(LC(F13)))  &kp LG(LC(F17))    &kp LG(X)  &text1              &text2              &tmux_split_vertical  &tmux_split_horizontal  &kp LS(LG(NUMBER_3))
+&kp CAPSLOCK    &kp LG(F18)  &kp LA(F18)  &kp LG(LA(F18))  &kp LG(LA(LC(F18)))  &kp LG(LC(F18))    &kp LG(C)  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(UP_ARROW)      &kp LS(RIGHT_ARROW)     &kp LS(LG(NUMBER_4))
+&trans          &kp LG(F19)  &kp LA(F19)  &kp LG(LA(F19))  &kp LA(LC(LG(F19)))  &kp LG(LC(F19))    &kp LG(V)  &tmux_left          &tmux_down          &tmux_up              &tmux_right             &trans
+                                          &trans           &kp LG(BACKSPACE)    &trans             &trans     &trans              &trans
             >;
 
             label = "Macros";
