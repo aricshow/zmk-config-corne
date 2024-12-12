@@ -129,6 +129,13 @@
             bindings = <&kp LC(B) &kp DOUBLE_QUOTES>;
             label = "TMUX_SPLIT_HORIZONTAL";
         };
+
+        vi_save_quit: vi_save_quit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ESCAPE &kp COLON &kp W &kp Q>;
+            label = "VI_SAVE_QUIT";
+        };
     };
 
     keymap {
@@ -147,7 +154,7 @@
 
         LOWER {
             bindings = <
-&kp GRAVE       &kp COLON    &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp C_VOLUME_UP    &kp LC(LEFT)  &kp PAGE_DOWN       &kp PAGE_UP       &kp LC(RIGHT)  &trans
+&vi_save_quit   &kp COLON    &kp AT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp EXCLAMATION    &kp C_VOLUME_UP    &kp LC(LEFT)  &kp PAGE_DOWN       &kp PAGE_UP       &kp LC(RIGHT)  &trans
 &caps_word      &kp HASH     &kp DOLLAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE          &kp C_VOLUME_DOWN  &kp LEFT      &kp DOWN            &kp UP_ARROW      &kp RIGHT      &trans
 &sk LEFT_SHIFT  &kp PERCENT  &kp CARET   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp QUESTION       &kp C_PLAY_PAUSE   &kp LG(LEFT)  &kp LG(DOWN_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &sk RIGHT_SHIFT
                                          &trans                &kp LA(BACKSPACE)      &trans             &trans             &kp MINUS     &trans
